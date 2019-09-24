@@ -1,0 +1,16 @@
+CREATE PROCEDURE [dbo].[createtable]
+		
+		
+		
+		AS
+		BEGIN
+		
+	
+		
+	CREATE TABLE tabName1
+	(
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[RankID] [int] NOT NULL,
+	[Name] varchar(20)
+) 
+END
