@@ -1,0 +1,26 @@
+{
+	"name": "AzureSqlDWTable2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDW2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"ta": {
+				"type": "string",
+				"defaultValue": "stores"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": {
+				"value": "@dataset().ta",
+				"type": "Expression"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
